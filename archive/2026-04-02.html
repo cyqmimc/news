@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <title>BRIGC 舆情简报 晨报 - 2026年04月02日 星期四</title>
+    
+    <style>
+         
+
+         
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+         
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', 'PingFang SC', sans-serif;
+            background-color: #f0f2f5;
+            color: #1f2937;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+         
+        .container {
+            width: 100%;
+            max-width: 640px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 8px 30px rgba(0, 0, 0, 0.04);
+        }
+
+         
+        .hero {
+            padding: 48px 24px 32px;
+            text-align: center;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .hero-glow-line {
+            height: 3px;
+            margin: 0 auto 24px;
+            max-width: 80px;
+            background: #62a536;
+            border-radius: 2px;
+        }
+
+        .brand {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #62a536;
+            margin-bottom: 12px;
+        }
+
+        .hero h1 {
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: #111827;
+            margin-bottom: 8px;
+        }
+
+        .hero .date {
+            font-size: 14px;
+            color: #6b7280;
+            font-weight: 400;
+        }
+
+        .hero .date a {
+            color: #62a536;
+            text-decoration: none;
+        }
+
+         
+        .stats {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #f7f8fa;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px 12px;
+            border-right: 1px solid #e5e7eb;
+        }
+
+        .stat-item:last-child {
+            border-right: none;
+        }
+
+        .stat-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #62a536;
+        }
+
+        .stat-label {
+            font-size: 11px;
+            color: #9ca3af;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 4px;
+        }
+
+         
+        .brief {
+            padding: 24px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .brief-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #62a536;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+        }
+
+        .brief-content {
+            font-size: 15px;
+            color: #374151;
+            line-height: 1.8;
+        }
+
+        .brief-content strong {
+            color: #549e39;
+        }
+
+         
+        .section {
+            padding: 28px 24px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .section-header {
+            margin-bottom: 20px;
+        }
+
+        .section-header table {
+            border-collapse: collapse;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #111827;
+            letter-spacing: 0.3px;
+            padding-left: 12px;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+
+         
+        .source-group {
+            margin-bottom: 16px;
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .source-header {
+            padding: 12px 16px;
+            font-weight: 600;
+            font-size: 14px;
+            color: #111827;
+            background-color: #f7f8fa;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .source-badge {
+            display: inline-block;
+            background-color: #f0fdf4;
+            color: #549e39;
+            font-size: 11px;
+            font-weight: 500;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+
+        .source-content {
+            padding: 12px;
+            background-color: #fff;
+        }
+
+         
+        .card {
+            padding: 16px;
+            margin-bottom: 12px;
+            background-color: #ffffff;
+            border: 1px solid #eef0f3;
+            border-radius: 8px;
+            box-shadow: none;
+        }
+
+        .card:last-child {
+            margin-bottom: 0;
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .card-title a {
+            color: #111827;
+            text-decoration: none;
+        }
+
+        .card-summary {
+            font-size: 15px;
+            color: #6b7280;
+            line-height: 1.7;
+            margin-bottom: 14px;
+        }
+
+        .card-link {
+            display: inline-block;
+            padding: 8px 14px;
+            background-color: #f0fdf4;
+            color: #549e39;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .card-link-arrow {
+            margin-left: 4px;
+        }
+
+         
+        .empty {
+            text-align: center;
+            padding: 32px 24px;
+            color: #9ca3af;
+            font-size: 14px;
+            font-style: italic;
+        }
+
+         
+        .footer {
+            padding: 40px 24px;
+            text-align: center;
+            background-color: #f7f8fa;
+        }
+
+        .footer-brand {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #111827;
+            margin-bottom: 8px;
+        }
+
+        .footer-tagline {
+            font-size: 12px;
+            color: #9ca3af;
+            margin-bottom: 16px;
+        }
+
+        .footer-divider {
+            width: 40px;
+            height: 2px;
+            background: #62a536;
+            margin: 16px auto;
+            border-radius: 1px;
+        }
+
+        .footer-credits {
+            font-size: 11px;
+            color: #9ca3af;
+        }
+
+        .footer-credits a {
+            color: #549e39;
+            text-decoration: none;
+        }
+
+         
+        .toc-nav {
+            padding: 0 24px 24px;
+            text-align: center;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .toc-link {
+            display: inline-block;
+            padding: 6px 14px;
+            margin: 4px;
+            background-color: #f7f8fa;
+            border: 1px solid #e5e7eb;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #374151;
+            text-decoration: none;
+        }
+
+         
+        @media only screen and (max-width: 600px) {
+            .container { width: 100% !important; max-width: 100% !important; box-shadow: none; }
+            .hero { padding: 32px 16px 24px; }
+            .hero h1 { font-size: 24px; }
+            .section { padding: 20px 12px; }
+            .card { padding: 14px; margin-bottom: 10px; }
+            .stat-value { font-size: 18px; }
+            .stat-label { font-size: 10px; }
+            .section-title { font-size: 15px; }
+        }
+
+         
+        @media only screen and (min-width: 768px) {
+            .container { max-width: 780px !important; }
+            .hero { padding: 56px 32px 36px; }
+            .hero h1 { font-size: 30px !important; }
+            .hero .date { font-size: 15px; }
+            .brand { font-size: 12px; letter-spacing: 4px; }
+            .stats .stat-value { font-size: 28px; }
+            .stats .stat-label { font-size: 12px; }
+            .brief-content { font-size: 16px !important; line-height: 1.9; }
+            .section { padding: 32px 28px; }
+            .section-title { font-size: 18px !important; }
+            .source-header { font-size: 15px; }
+            .card { padding: 20px; }
+            .card-title { font-size: 18px !important; }
+            .card-summary { font-size: 16px !important; line-height: 1.8; }
+            .card-link { font-size: 14px; padding: 10px 18px; }
+            .toc-link { font-size: 14px; padding: 8px 16px; }
+            .footer-brand { font-size: 14px; }
+            .footer-tagline { font-size: 13px; }
+        }
+
+         
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #0f1117 !important;
+                color: #e5e7eb !important;
+            }
+
+            .container {
+                background-color: #1a1d27 !important;
+                box-shadow: 0 0 60px rgba(0, 0, 0, 0.5) !important;
+            }
+
+            .hero {
+                background-color: #1a1d27 !important;
+                border-bottom-color: #2d3040 !important;
+            }
+
+            .hero-glow-line {
+                box-shadow: 0 0 12px rgba(98, 165, 54, 0.3);
+            }
+
+            .hero h1 {
+                color: #f9fafb !important;
+            }
+
+            .hero .date {
+                color: rgba(255, 255, 255, 0.5) !important;
+            }
+
+            .hero .date a {
+                color: #86d456 !important;
+            }
+
+            .brand {
+                color: #86d456 !important;
+            }
+
+            .stats {
+                background-color: #1e2130 !important;
+                border-bottom-color: #2d3040 !important;
+            }
+
+            .stat-item {
+                border-right-color: #2d3040 !important;
+            }
+
+            .stat-value {
+                color: #86d456 !important;
+            }
+
+            .stat-label {
+                color: rgba(255, 255, 255, 0.4) !important;
+            }
+
+            .section {
+                border-bottom-color: #2d3040 !important;
+            }
+
+            .section-title {
+                color: #f9fafb !important;
+            }
+
+             
+            .card {
+                background-color: #222636 !important;
+                border: 1px solid #2d3040 !important;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+            }
+
+            .card-title a {
+                color: #f9fafb !important;
+            }
+
+            .card-summary {
+                color: rgba(255, 255, 255, 0.6) !important;
+            }
+
+            .card-link {
+                background-color: rgba(98, 165, 54, 0.15) !important;
+                color: #86d456 !important;
+                border: 1px solid rgba(98, 165, 54, 0.25) !important;
+            }
+
+             
+            .source-group {
+                background-color: #222636 !important;
+                border-color: #2d3040 !important;
+            }
+
+            .source-header {
+                background-color: #272b3d !important;
+                color: #f9fafb !important;
+                border-bottom-color: #2d3040 !important;
+            }
+
+            .source-badge {
+                background-color: rgba(98, 165, 54, 0.15) !important;
+                color: #86d456 !important;
+            }
+
+            .source-content {
+                background-color: transparent !important;
+            }
+
+            .brief {
+                background-color: #1a1d27 !important;
+                border-bottom-color: #2d3040 !important;
+            }
+
+            .brief-content {
+                color: rgba(255, 255, 255, 0.7) !important;
+            }
+
+            .footer {
+                background-color: #0f1117 !important;
+            }
+
+            .footer-brand {
+                color: rgba(255, 255, 255, 0.8) !important;
+            }
+
+            .footer-tagline {
+                color: rgba(255, 255, 255, 0.4) !important;
+            }
+
+            .footer-credits {
+                color: rgba(255, 255, 255, 0.3) !important;
+            }
+
+            .footer-credits a {
+                color: #86d456 !important;
+            }
+
+            .toc-nav {
+                background-color: #1a1d27 !important;
+                border-bottom-color: #2d3040 !important;
+            }
+
+            .toc-link {
+                background-color: #222636 !important;
+                border-color: #2d3040 !important;
+                color: #d1d5db !important;
+            }
+        }
+
+         
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+            @keyframes glow-pulse {
+                0%, 100% { opacity: 0.7; }
+                50% { opacity: 1; }
+            }
+
+            .hero-glow-line {
+                animation: glow-pulse 3s ease-in-out infinite;
+            }
+
+            @keyframes fade-slide-in {
+                from {
+                    opacity: 0;
+                    transform: translateY(8px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .card {
+                animation: fade-slide-in 0.4s ease-out;
+            }
+        }
+    </style>
+</head>
+<body style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans SC','PingFang SC',sans-serif;background-color:#f0f2f5;color:#1f2937;line-height:1.7;margin:0;padding:0;">
+    <div class="container" style="width:100%;max-width:640px;margin:0 auto;background-color:#ffffff;">
+
+        
+        <div class="hero" style="padding:48px 24px 32px;text-align:center;background-color:#ffffff;border-bottom:1px solid #e5e7eb;">
+            <div class="hero-glow-line" style="height:3px;margin:0 auto 24px;max-width:80px;background:#62a536;border-radius:2px;"></div>
+            <div class="brand" style="display:inline-block;font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#62a536;margin-bottom:12px;">BRIGC 舆情简报</div>
+            <h1 style="font-size:26px;font-weight:700;letter-spacing:-0.5px;color:#111827;margin-bottom:8px;">每日资讯简报</h1>
+            <div class="date" style="font-size:14px;color:#6b7280;font-weight:400;">2026年04月02日 星期四</div>
+        </div>
+
+        
+        <div class="toc-nav" style="padding:12px 24px;text-align:center;background-color:#ffffff;border-bottom:1px solid #e5e7eb;">
+            
+            <a href="#cat-1" class="toc-link" style="display:inline-block;padding:6px 14px;margin:4px;background-color:#f7f8fa;border:1px solid #e5e7eb;border-radius:20px;font-size:12px;font-weight:500;color:#374151;text-decoration:none;">舆情总览</a>
+            
+            <a href="#cat-2" class="toc-link" style="display:inline-block;padding:6px 14px;margin:4px;background-color:#f7f8fa;border:1px solid #e5e7eb;border-radius:20px;font-size:12px;font-weight:500;color:#374151;text-decoration:none;">BRIGC</a>
+            
+            <a href="#cat-3" class="toc-link" style="display:inline-block;padding:6px 14px;margin:4px;background-color:#f7f8fa;border:1px solid #e5e7eb;border-radius:20px;font-size:12px;font-weight:500;color:#374151;text-decoration:none;">气候变化</a>
+            
+            <a href="#cat-4" class="toc-link" style="display:inline-block;padding:6px 14px;margin:4px;background-color:#f7f8fa;border:1px solid #e5e7eb;border-radius:20px;font-size:12px;font-weight:500;color:#374151;text-decoration:none;">生态环保</a>
+            
+        </div>
+
+        
+        <table class="stats" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;background-color:#f7f8fa;border-bottom:1px solid #e5e7eb;">
+            <tr>
+                <td class="stat-item" width="33%" style="text-align:center;padding:20px 12px;border-right:1px solid #e5e7eb;">
+                    <div class="stat-value" style="font-size:24px;font-weight:700;color:#62a536;">11</div>
+                    <div class="stat-label" style="font-size:11px;color:#9ca3af;text-transform:uppercase;letter-spacing:1px;margin-top:4px;">资讯</div>
+                </td>
+                <td class="stat-item" width="34%" style="text-align:center;padding:20px 12px;border-right:1px solid #e5e7eb;">
+                    <div class="stat-value" style="font-size:24px;font-weight:700;color:#62a536;">8</div>
+                    <div class="stat-label" style="font-size:11px;color:#9ca3af;text-transform:uppercase;letter-spacing:1px;margin-top:4px;">来源</div>
+                </td>
+                <td class="stat-item" width="33%" style="text-align:center;padding:20px 12px;">
+                    <div class="stat-value" style="font-size:24px;font-weight:700;color:#62a536;">4</div>
+                    <div class="stat-label" style="font-size:11px;color:#9ca3af;text-transform:uppercase;letter-spacing:1px;margin-top:4px;">板块</div>
+                </td>
+            </tr>
+        </table>
+
+        
+        
+        
+        <div class="editorial" style="padding:24px;background-color:#ffffff;border-bottom:1px solid #e5e7eb;">
+            <div style="font-size:13px;font-weight:600;color:#62a536;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:14px;">📝 本期导语</div>
+            <div style="font-size:15px;color:#374151;line-height:1.9;padding:16px 18px;background-color:#f7f8fa;border-radius:8px;border-left:3px solid #62a536;">全球能源转型正陷入“加速”与“受阻”的张力之中。本期简报呈现的核心图景是：尽管中国首次颁布生态环境法、法国推动储能强制令等政策创新彰显绿色决心，但全球层面的气候治理正面临结构性挑战——美国与印尼的贸易协议被批评为“矿业与化石燃料的提取性殖民主义”，公海条约推进受阻，IPCC资金告急凸显国际合作机制脆弱性。与此同时，伊朗冲突暴露亚洲能源系统脆弱性，凸显地缘政治与气候行动的深度捆绑。技术层面，欧洲120GW可再生能源项目因电网瓶颈面临威胁，法国寄望钠离子电池技术突破储能困境，而巴西则通过生物燃料缓冲机制展现能源安全与减排的协同可能。值得关注的是，世界气象组织确认2023-2025年为有记录以来最热时期，海洋热含量创历史新高，气候风险正以超出预期的速度兑现，各国在能源转型与气候适应间的政策平衡将更加紧迫。</div>
+        </div>
+        
+        
+        
+        <div class="brief" style="padding:24px;background-color:#ffffff;border-bottom:1px solid #e5e7eb;">
+            <div class="brief-title" style="font-size:13px;font-weight:600;color:#62a536;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:14px;">📋 舆情总览</div>
+            <div class="brief-content" style="font-size:15px;color:#374151;line-height:1.8;"><div style="margin-bottom:12px;padding:10px 14px;background-color:#f7f8fa;border-radius:8px;border-left:3px solid #62a536;"><span style="display:inline-block;font-size:13px;font-weight:600;color:#62a536;margin-bottom:4px;">舆情总览</span><br/><span style="font-size:15px;color:#374151;line-height:1.75;">中国颁布首部生态环境法，标志着21世纪全球法律发展的重要里程碑。该法旨在协调工业发展与地球生物物理极限之间的矛盾，是全球最雄心勃勃的环保立法尝试之一，彰显中国绿色决心。</span></div><div style="margin-bottom:12px;padding:10px 14px;background-color:#f7f8fa;border-radius:8px;border-left:3px solid #62a536;"><span style="display:inline-block;font-size:13px;font-weight:600;color:#62a536;margin-bottom:4px;">BRIGC</span><br/><span style="font-size:15px;color:#374151;line-height:1.75;">日本和法国同意加强关键矿产供应链合作，两国制定联合路线图以确保锂、钴、镍等战略性矿产的稳定供应。此举旨在应对全球清洁能源转型带来的资源竞争，减少供应链风险。</span></div><div style="margin-bottom:12px;padding:10px 14px;background-color:#f7f8fa;border-radius:8px;border-left:3px solid #62a536;"><span style="display:inline-block;font-size:13px;font-weight:600;color:#62a536;margin-bottom:4px;">气候变化</span><br/><span style="font-size:15px;color:#374151;line-height:1.75;">该板块负面动态频发。美印尼贸易协议被批评为“矿业与化石燃料的提取性殖民主义”；全球合作受阻打击公海条约前景；伊朗战争暴露亚洲能源脆弱性；联合国气候panel面临内忧与资金危机，IPCC下一轮气候报告资金缺口问题引发主席警告。</span></div><div style="margin-bottom:12px;padding:10px 14px;background-color:#f7f8fa;border-radius:8px;border-left:3px solid #62a536;"><span style="display:inline-block;font-size:13px;font-weight:600;color:#62a536;margin-bottom:4px;">生态环保</span><br/><span style="font-size:15px;color:#374151;line-height:1.75;">正负动态并存。法国推动钠离子储能强制要求，助力可再生能源灵活性整合；巴西利用生物燃料缓冲机制应对油价上涨。然而欧洲电网瓶颈严重，约120GW可再生能源项目面临威胁；世界气象组织警告人类正在海洋中积累热量和危机，2023-2025年创全球地表温度最高纪录。</span></div></div>
+        </div>
+        
+
+        
+        <div class="section" id="cat-1" style="padding:28px 24px;border-bottom:1px solid #e5e7eb;">
+            <div class="section-header" style="margin-bottom:20px;">
+                <table cellpadding="0" cellspacing="0" border="0" style="width:auto;border-collapse:collapse;">
+                    <tr>
+                        <td style="width:36px;height:36px;border-radius:10px;text-align:center;vertical-align:middle;background-color:#e8f5e0;font-size:18px;line-height:36px;" width="36" height="36">📡</td>
+                        <td class="section-title" style="font-size:16px;font-weight:600;color:#111827;letter-spacing:0.3px;padding-left:12px;vertical-align:middle;white-space:nowrap;">舆情总览</td>
+                    </tr>
+                </table>
+                
+                <div style="margin-top:12px;padding:10px 14px;background-color:#f7f8fa;border-left:3px solid #62a536;border-radius:0 6px 6px 0;font-size:14px;color:#374151;line-height:1.75;">
+                    中国颁布首部生态环境法，标志着21世纪全球法律发展的重要里程碑。该法旨在协调工业发展与地球生物物理极限之间的矛盾，是全球最雄心勃勃的环保立法尝试之一，彰显中国绿色决心。
+                </div>
+                
+            </div>
+
+            
+                
+                    <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
+                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#f7f8fa;border-bottom:1px solid #e5e7eb;">
+                            海外舆情·全部
+                            <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">1</span>
+                        </div>
+                        <div class="source-content" style="padding:12px;background-color:#fff;">
+                            
+                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
+                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://www.chinadaily.com.cn/a/202604/01/WS69cc7024a310d6866eb410b3.html" target="_blank" style="color:#111827;text-decoration:none;">环境法规彰显中国绿色决心</a>
+                                </div>
+                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
+                                    <tr>
+                                        <td style="padding-right:10px;">
+                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">海外舆情·全部</span>
+                                        </td>
+                                        
+                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
+                                            2026-04-01 01:08
+                                        </td>
+                                        
+                                    </tr>
+                                </table>
+                                
+                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">【正面】中国颁布首部生态环境法，标志着21世纪全球法律发展的重要里程碑。该法旨在协调工业发展与地球生物物理极限之间的矛盾，是全球最雄心勃勃的环保立法尝试之一。从第三世界国际法视角来看，此举体现了中国的认知主权，拒绝了碎片化、被动的环境治理模式，展现了发展中国家在全球环境治理中的积极作用。</div>
+                                
+                                <a href="https://www.chinadaily.com.cn/a/202604/01/WS69cc7024a310d6866eb410b3.html" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+            
+        </div>
+        
+        <div class="section" id="cat-2" style="padding:28px 24px;border-bottom:1px solid #e5e7eb;">
+            <div class="section-header" style="margin-bottom:20px;">
+                <table cellpadding="0" cellspacing="0" border="0" style="width:auto;border-collapse:collapse;">
+                    <tr>
+                        <td style="width:36px;height:36px;border-radius:10px;text-align:center;vertical-align:middle;background-color:#e8f5e0;font-size:18px;line-height:36px;" width="36" height="36">🤝</td>
+                        <td class="section-title" style="font-size:16px;font-weight:600;color:#111827;letter-spacing:0.3px;padding-left:12px;vertical-align:middle;white-space:nowrap;">BRIGC</td>
+                    </tr>
+                </table>
+                
+                <div style="margin-top:12px;padding:10px 14px;background-color:#f7f8fa;border-left:3px solid #62a536;border-radius:0 6px 6px 0;font-size:14px;color:#374151;line-height:1.75;">
+                    日本和法国同意加强关键矿产供应链合作，两国制定联合路线图以确保锂、钴、镍等战略性矿产的稳定供应。此举旨在应对全球清洁能源转型带来的资源竞争，减少供应链风险。
+                </div>
+                
+            </div>
+
+            
+                
+                    <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
+                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#f7f8fa;border-bottom:1px solid #e5e7eb;">
+                            BRIGC动态
+                            <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">1</span>
+                        </div>
+                        <div class="source-content" style="padding:12px;background-color:#fff;">
+                            
+                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
+                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://www.scmp.com/news/asia/east-asia/article/3348694/japan-france-draw-road-map-supply-critical-minerals" target="_blank" style="color:#111827;text-decoration:none;">日本与法国制定关键矿产供应路线图</a>
+                                </div>
+                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
+                                    <tr>
+                                        <td style="padding-right:10px;">
+                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">BRIGC动态</span>
+                                        </td>
+                                        
+                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
+                                            2026-04-01 11:58
+                                        </td>
+                                        
+                                    </tr>
+                                </table>
+                                
+                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">【正面】日本和法国同意加强关键矿产供应链合作，两国将制定联合路线图以确保锂、钴、镍等战略性矿产的稳定供应。此举旨在应对全球清洁能源转型带来的资源竞争，减少供应链脆弱性。</div>
+                                
+                                <a href="https://www.scmp.com/news/asia/east-asia/article/3348694/japan-france-draw-road-map-supply-critical-minerals" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+            
+        </div>
+        
+        <div class="section" id="cat-3" style="padding:28px 24px;border-bottom:1px solid #e5e7eb;">
+            <div class="section-header" style="margin-bottom:20px;">
+                <table cellpadding="0" cellspacing="0" border="0" style="width:auto;border-collapse:collapse;">
+                    <tr>
+                        <td style="width:36px;height:36px;border-radius:10px;text-align:center;vertical-align:middle;background-color:#fef2f2;font-size:18px;line-height:36px;" width="36" height="36">🌡️</td>
+                        <td class="section-title" style="font-size:16px;font-weight:600;color:#111827;letter-spacing:0.3px;padding-left:12px;vertical-align:middle;white-space:nowrap;">气候变化</td>
+                    </tr>
+                </table>
+                
+                <div style="margin-top:12px;padding:10px 14px;background-color:#f7f8fa;border-left:3px solid #62a536;border-radius:0 6px 6px 0;font-size:14px;color:#374151;line-height:1.75;">
+                    该板块负面动态频发。美印尼贸易协议被批评为“矿业与化石燃料的提取性殖民主义”；全球合作受阻打击公海条约前景；伊朗战争暴露亚洲能源脆弱性；联合国气候panel面临内忧与资金危机，IPCC下一轮气候报告资金缺口问题引发主席警告。
+                </div>
+                
+            </div>
+
+            
+                
+                    <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
+                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#f7f8fa;border-bottom:1px solid #e5e7eb;">
+                            生态商业·碳与气候
+                            <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">3</span>
+                        </div>
+                        <div class="source-content" style="padding:12px;background-color:#fff;">
+                            
+                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
+                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://www.eco-business.com/news/critics-call-us-indonesia-trade-deal-extractive-colonialism-over-mining-fossil-fuels/" target="_blank" style="color:#111827;text-decoration:none;">批评者称美印尼贸易协议为“矿业与化石燃料的提取性殖民主义”</a>
+                                </div>
+                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
+                                    <tr>
+                                        <td style="padding-right:10px;">
+                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">生态商业·碳与气候</span>
+                                        </td>
+                                        
+                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
+                                            2026-04-02 08:43
+                                        </td>
+                                        
+                                    </tr>
+                                </table>
+                                
+                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">活动人士警告称，新的美国-印度尼西亚贸易协议可能会加速采矿、森林砍伐和化石燃料的使用，而环境保障措施薄弱且不具约束力。</div>
+                                
+                                <a href="https://www.eco-business.com/news/critics-call-us-indonesia-trade-deal-extractive-colonialism-over-mining-fossil-fuels/" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
+                            </div>
+                            
+                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
+                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://www.eco-business.com/news/battering-of-global-cooperation-clouds-future-of-high-seas-treaty/" target="_blank" style="color:#111827;text-decoration:none;">全球合作受阻打击公海条约前景</a>
+                                </div>
+                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
+                                    <tr>
+                                        <td style="padding-right:10px;">
+                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">生态商业·碳与气候</span>
+                                        </td>
+                                        
+                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
+                                            2026-04-02 08:39
+                                        </td>
+                                        
+                                    </tr>
+                                </table>
+                                
+                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">一项广受赞誉的保护公海的国际协议已经进入了一个与创建该协议时截然不同的政治世界。</div>
+                                
+                                <a href="https://www.eco-business.com/news/battering-of-global-cooperation-clouds-future-of-high-seas-treaty/" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
+                            </div>
+                            
+                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
+                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://www.eco-business.com/news/renewables-shift-needed-as-iran-war-exposes-asias-fragile-energy-market-experts/" target="_blank" style="color:#111827;text-decoration:none;">专家：伊朗战争暴露亚洲能源脆弱性，需加速转向可再生能源</a>
+                                </div>
+                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
+                                    <tr>
+                                        <td style="padding-right:10px;">
+                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">生态商业·碳与气候</span>
+                                        </td>
+                                        
+                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
+                                            2026-04-01 15:04
+                                        </td>
+                                        
+                                    </tr>
+                                </table>
+                                
+                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">随着石油和天然气公司从战时价格飙升中获得暴利，区域气候倡导者敦促各国政府对收益征税，并将资金用于可再生能源和电网升级，以确保亚洲的……</div>
+                                
+                                <a href="https://www.eco-business.com/news/renewables-shift-needed-as-iran-war-exposes-asias-fragile-energy-market-experts/" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
+                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#f7f8fa;border-bottom:1px solid #e5e7eb;">
+                            气候内参
+                            <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">1</span>
+                        </div>
+                        <div class="source-content" style="padding:12px;background-color:#fff;">
+                            
+                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
+                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://insideclimatenews.org/news/01042026/ipcc-global-climate-panel-potential-problems/" target="_blank" style="color:#111827;text-decoration:none;">联合国气候 panel 面临内忧与资金危机</a>
+                                </div>
+                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
+                                    <tr>
+                                        <td style="padding-right:10px;">
+                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">气候内参</span>
+                                        </td>
+                                        
+                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
+                                            2026-04-02 05:26
+                                        </td>
+                                        
+                                    </tr>
+                                </table>
+                                
+                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">当一连串的气候冲击发生的速度快于科学家追踪的速度时，评估全球变暖风险和应对方案的联合国科学机构陷入了程序困境……</div>
+                                
+                                <a href="https://insideclimatenews.org/news/01042026/ipcc-global-climate-panel-potential-problems/" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
+                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#f7f8fa;border-bottom:1px solid #e5e7eb;">
+                            气候之家
+                            <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">1</span>
+                        </div>
+                        <div class="source-content" style="padding:12px;background-color:#fff;">
+                            
+                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
+                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://www.climatechangenews.com/2026/04/01/funding-gap-threatens-next-round-of-ipcc-climate-science-reports-chair-warns/" target="_blank" style="color:#111827;text-decoration:none;">资金缺口威胁 IPCC 下一轮气候报告，主席警告</a>
+                                </div>
+                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
+                                    <tr>
+                                        <td style="padding-right:10px;">
+                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">气候之家</span>
+                                        </td>
+                                        
+                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
+                                            2026-04-02 00:27
+                                        </td>
+                                        
+                                    </tr>
+                                </table>
+                                
+                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">在曼谷举行的最新 IPCC 会议因关于何时发布其旗舰报告的持续分歧以及对成本削减提案的担忧而蒙上阴影。</div>
+                                
+                                <a href="https://www.climatechangenews.com/2026/04/01/funding-gap-threatens-next-round-of-ipcc-climate-science-reports-chair-warns/" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+            
+        </div>
+        
+        <div class="section" id="cat-4" style="padding:28px 24px;border-bottom:1px solid #e5e7eb;">
+            <div class="section-header" style="margin-bottom:20px;">
+                <table cellpadding="0" cellspacing="0" border="0" style="width:auto;border-collapse:collapse;">
+                    <tr>
+                        <td style="width:36px;height:36px;border-radius:10px;text-align:center;vertical-align:middle;background-color:#ecfdf5;font-size:18px;line-height:36px;" width="36" height="36">🌱</td>
+                        <td class="section-title" style="font-size:16px;font-weight:600;color:#111827;letter-spacing:0.3px;padding-left:12px;vertical-align:middle;white-space:nowrap;">生态环保</td>
+                    </tr>
+                </table>
+                
+                <div style="margin-top:12px;padding:10px 14px;background-color:#f7f8fa;border-left:3px solid #62a536;border-radius:0 6px 6px 0;font-size:14px;color:#374151;line-height:1.75;">
+                    正负动态并存。法国推动钠离子储能强制要求，助力可再生能源灵活性整合；巴西利用生物燃料缓冲机制应对油价上涨。然而欧洲电网瓶颈严重，约120GW可再生能源项目面临威胁；世界气象组织警告人类正在海洋中积累热量和危机，2023-2025年创全球地表温度最高纪录。
+                </div>
+                
+            </div>
+
+            
+                
+                    <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
+                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#f7f8fa;border-bottom:1px solid #e5e7eb;">
+                            气候与环境
+                            <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">2</span>
+                        </div>
+                        <div class="source-content" style="padding:12px;background-color:#fff;">
+                            
+                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
+                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://www.pv-magazine.com/2026/04/01/can-sodium-ion-storage-drive-energy-flexibility-in-france/" target="_blank" style="color:#111827;text-decoration:none;">法国推动钠离子储能强制要求，助力可再生能源灵活性整合</a>
+                                </div>
+                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
+                                    <tr>
+                                        <td style="padding-right:10px;">
+                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">气候与环境</span>
+                                        </td>
+                                        
+                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
+                                            2026-04-01 10:59
+                                        </td>
+                                        
+                                    </tr>
+                                </table>
+                                
+                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">【正面】法国环境协会协会提议对装机容量超过10kWp的可再生能源项目实施储能强制要求，以在发电源头整合能源灵活性。该协会认为欧洲钠离子电池技术可为这一目标提供支持。通过储能 mandate，可更好平衡可再生能源间歇性供电问题，提升电网稳定性。</div>
+                                
+                                <a href="https://www.pv-magazine.com/2026/04/01/can-sodium-ion-storage-drive-energy-flexibility-in-france/" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
+                            </div>
+                            
+                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
+                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://www.pv-magazine.com/2026/04/01/grid-bottlenecks-threaten-120-gw-of-planned-renewables-in-europe/" target="_blank" style="color:#111827;text-decoration:none;">欧洲电网瓶颈严重，120GW 可再生能源项目面临威胁</a>
+                                </div>
+                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
+                                    <tr>
+                                        <td style="padding-right:10px;">
+                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">气候与环境</span>
+                                        </td>
+                                        
+                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
+                                            2026-04-01 07:43
+                                        </td>
+                                        
+                                    </tr>
+                                </table>
+                                
+                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">【负面】根据Ember最新分析，欧洲输配电网络存在重大瓶颈，可能威胁约120GW计划中可再生能源项目的可行性。电网基础设施不足不仅影响大型公用事业规模项目，也制约了住宅和小型分布式可再生能源的发展。输配电能力的局限性正成为欧洲能源转型的关键障碍。</div>
+                                
+                                <a href="https://www.pv-magazine.com/2026/04/01/grid-bottlenecks-threaten-120-gw-of-planned-renewables-in-europe/" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
+                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#f7f8fa;border-bottom:1px solid #e5e7eb;">
+                            中外对话
+                            <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">1</span>
+                        </div>
+                        <div class="source-content" style="padding:12px;background-color:#fff;">
+                            
+                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
+                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://dialogue.earth/en/ocean/wmo-warns-humanity-is-storing-up-heat-and-trouble-in-the-ocean/" target="_blank" style="color:#111827;text-decoration:none;">世界气象组织警告：人类正在海洋中积累热量和危机</a>
+                                </div>
+                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
+                                    <tr>
+                                        <td style="padding-right:10px;">
+                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">中外对话</span>
+                                        </td>
+                                        
+                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
+                                            2026-03-31 22:49
+                                        </td>
+                                        
+                                    </tr>
+                                </table>
+                                
+                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">世界气象组织发布《2025年全球气候状况报告》，确认2023-2025年是自175年前有观测记录以来全球地表温度最高的时期。报告显示，海洋热含量在2025年创下历史新高，2005年至2025年间每年增加约11泽塔焦耳，相当于人类年能源消耗的18倍。人类活动产生的热量约91%被海洋吸收，仅1%留在大气层中。科学家警告，热量正在渗透到海洋深处，将气候变化的影响锁定数百年至数千年。同时，2025年北极海冰范围降至有记录以来最低水平。</div>
+                                
+                                <a href="https://dialogue.earth/en/ocean/wmo-warns-humanity-is-storing-up-heat-and-trouble-in-the-ocean/" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
+                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#f7f8fa;border-bottom:1px solid #e5e7eb;">
+                            FECO环保履约
+                            <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">1</span>
+                        </div>
+                        <div class="source-content" style="padding:12px;background-color:#fff;">
+                            
+                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
+                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://news.mongabay.com/short-article/2026/03/brazil-is-uniquely-positioned-to-weather-rising-world-oil-prices/" target="_blank" style="color:#111827;text-decoration:none;">巴西利用生物燃料缓冲机制应对油价上涨</a>
+                                </div>
+                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
+                                    <tr>
+                                        <td style="padding-right:10px;">
+                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">FECO环保履约</span>
+                                        </td>
+                                        
+                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
+                                            2026-03-31 18:29
+                                        </td>
+                                        
+                                    </tr>
+                                </table>
+                                
+                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">【正面】巴西正在利用数十年前建立的缓冲机制来应对全球油价上涨，这一机制既经济实惠又环保。作为全球重要的石油生产国，巴西通过发展生物燃料和国内能源生产，在全球石油市场因地区冲突而动荡之际，获得了独特的保护优势。</div>
+                                
+                                <a href="https://news.mongabay.com/short-article/2026/03/brazil-is-uniquely-positioned-to-weather-rising-world-oil-prices/" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+            
+        </div>
+        
+
+        
+        <div class="footer" style="padding:40px 24px;text-align:center;background-color:#f7f8fa;">
+            <div class="footer-brand" style="font-size:13px;font-weight:700;letter-spacing:2px;color:#111827;margin-bottom:8px;">BRIGC 舆情简报</div>
+            <div class="footer-tagline" style="font-size:12px;color:#9ca3af;margin-bottom:16px;">由&#34;一带一路&#34;生态环保大数据服务平台 智慧生成</div>
+            <div class="footer-divider" style="width:40px;height:2px;background:#62a536;margin:16px auto;border-radius:1px;"></div>
+        </div>
+
+    </div>
+</body>
+</html>
