@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light dark">
     <meta name="supported-color-schemes" content="light dark">
-    <title>BRIGC 舆情简报 晨报 - 2026年04月02日 星期四</title>
+    <title>BRIGC 新闻简报 · 2026年04月17日 星期五</title>
     
     <style>
          
@@ -48,22 +48,12 @@
             border-radius: 2px;
         }
 
-        .brand {
-            display: inline-block;
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: #62a536;
-            margin-bottom: 12px;
-        }
-
-        .hero h1 {
+        .hero-title {
             font-size: 26px;
             font-weight: 700;
-            letter-spacing: -0.5px;
+            letter-spacing: -0.3px;
             color: #111827;
-            margin-bottom: 8px;
+            margin: 0 0 10px 0;
         }
 
         .hero .date {
@@ -75,38 +65,6 @@
         .hero .date a {
             color: #62a536;
             text-decoration: none;
-        }
-
-         
-        .stats {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: #f7f8fa;
-            border-bottom: 1px solid #e5e7eb;
-        }
-
-        .stat-item {
-            text-align: center;
-            padding: 20px 12px;
-            border-right: 1px solid #e5e7eb;
-        }
-
-        .stat-item:last-child {
-            border-right: none;
-        }
-
-        .stat-value {
-            font-size: 24px;
-            font-weight: 700;
-            color: #62a536;
-        }
-
-        .stat-label {
-            font-size: 11px;
-            color: #9ca3af;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 4px;
         }
 
          
@@ -126,9 +84,9 @@
         }
 
         .brief-content {
-            font-size: 15px;
+            font-size: 16px;
             color: #374151;
-            line-height: 1.8;
+            line-height: 1.7;
         }
 
         .brief-content strong {
@@ -150,7 +108,7 @@
         }
 
         .section-title {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 600;
             color: #111827;
             letter-spacing: 0.3px;
@@ -173,8 +131,8 @@
             font-weight: 600;
             font-size: 14px;
             color: #111827;
-            background-color: #f7f8fa;
-            border-bottom: 1px solid #e5e7eb;
+            background-color: #ffffff;
+            border-bottom: 1px solid #f0f1f3;
         }
 
         .source-badge {
@@ -190,26 +148,28 @@
         }
 
         .source-content {
-            padding: 12px;
+            padding: 0;
             background-color: #fff;
         }
 
          
         .card {
             padding: 16px;
-            margin-bottom: 12px;
+            margin-bottom: 0;
             background-color: #ffffff;
-            border: 1px solid #eef0f3;
-            border-radius: 8px;
+            border: none;
+            border-bottom: 1px solid #f0f1f3;
+            border-radius: 0;
             box-shadow: none;
         }
 
         .card:last-child {
             margin-bottom: 0;
+            border-bottom: none;
         }
 
         .card-title {
-            font-size: 16px;
+            font-size: 17px;
             font-weight: 600;
             line-height: 1.5;
             margin-bottom: 10px;
@@ -221,25 +181,18 @@
         }
 
         .card-summary {
-            font-size: 15px;
-            color: #6b7280;
+            font-size: 16px;
+            color: #4b5563;
             line-height: 1.7;
             margin-bottom: 14px;
+            text-align: justify;
         }
 
         .card-link {
-            display: inline-block;
-            padding: 8px 14px;
-            background-color: #f0fdf4;
             color: #549e39;
-            border-radius: 6px;
             text-decoration: none;
-            font-size: 12px;
+            font-size: 13px;
             font-weight: 500;
-        }
-
-        .card-link-arrow {
-            margin-left: 4px;
         }
 
          
@@ -315,11 +268,9 @@
         @media only screen and (max-width: 600px) {
             .container { width: 100% !important; max-width: 100% !important; box-shadow: none; }
             .hero { padding: 32px 16px 24px; }
-            .hero h1 { font-size: 24px; }
+            .hero .date { font-size: 13px; }
             .section { padding: 20px 12px; }
             .card { padding: 14px; margin-bottom: 10px; }
-            .stat-value { font-size: 18px; }
-            .stat-label { font-size: 10px; }
             .section-title { font-size: 15px; }
         }
 
@@ -327,19 +278,16 @@
         @media only screen and (min-width: 768px) {
             .container { max-width: 780px !important; }
             .hero { padding: 56px 32px 36px; }
-            .hero h1 { font-size: 30px !important; }
             .hero .date { font-size: 15px; }
-            .brand { font-size: 12px; letter-spacing: 4px; }
-            .stats .stat-value { font-size: 28px; }
-            .stats .stat-label { font-size: 12px; }
-            .brief-content { font-size: 16px !important; line-height: 1.9; }
+            .hero-title { font-size: 30px !important; }
+            .brief-content { font-size: 16px !important; line-height: 1.7; }
             .section { padding: 32px 28px; }
             .section-title { font-size: 18px !important; }
             .source-header { font-size: 15px; }
             .card { padding: 20px; }
-            .card-title { font-size: 18px !important; }
-            .card-summary { font-size: 16px !important; line-height: 1.8; }
-            .card-link { font-size: 14px; padding: 10px 18px; }
+            .card-title { font-size: 19px !important; }
+            .card-summary { font-size: 16px !important; line-height: 1.7; }
+            .card-link { font-size: 14px; }
             .toc-link { font-size: 14px; padding: 8px 16px; }
             .footer-brand { font-size: 14px; }
             .footer-tagline { font-size: 13px; }
@@ -366,7 +314,7 @@
                 box-shadow: 0 0 12px rgba(98, 165, 54, 0.3);
             }
 
-            .hero h1 {
+            .hero-title {
                 color: #f9fafb !important;
             }
 
@@ -376,27 +324,6 @@
 
             .hero .date a {
                 color: #86d456 !important;
-            }
-
-            .brand {
-                color: #86d456 !important;
-            }
-
-            .stats {
-                background-color: #1e2130 !important;
-                border-bottom-color: #2d3040 !important;
-            }
-
-            .stat-item {
-                border-right-color: #2d3040 !important;
-            }
-
-            .stat-value {
-                color: #86d456 !important;
-            }
-
-            .stat-label {
-                color: rgba(255, 255, 255, 0.4) !important;
             }
 
             .section {
@@ -410,8 +337,9 @@
              
             .card {
                 background-color: #222636 !important;
-                border: 1px solid #2d3040 !important;
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+                border: none !important;
+                border-bottom: 1px solid #2d3040 !important;
+                box-shadow: none !important;
             }
 
             .card-title a {
@@ -423,9 +351,7 @@
             }
 
             .card-link {
-                background-color: rgba(98, 165, 54, 0.15) !important;
                 color: #86d456 !important;
-                border: 1px solid rgba(98, 165, 54, 0.25) !important;
             }
 
              
@@ -435,7 +361,7 @@
             }
 
             .source-header {
-                background-color: #272b3d !important;
+                background-color: #222636 !important;
                 color: #f9fafb !important;
                 border-bottom-color: #2d3040 !important;
             }
@@ -456,6 +382,15 @@
 
             .brief-content {
                 color: rgba(255, 255, 255, 0.7) !important;
+            }
+
+            .about-us {
+                background-color: #161822 !important;
+                border-top-color: #2d3040 !important;
+            }
+
+            .about-us-text {
+                color: rgba(255, 255, 255, 0.55) !important;
             }
 
             .footer {
@@ -524,55 +459,33 @@
         
         <div class="hero" style="padding:48px 24px 32px;text-align:center;background-color:#ffffff;border-bottom:1px solid #e5e7eb;">
             <div class="hero-glow-line" style="height:3px;margin:0 auto 24px;max-width:80px;background:#62a536;border-radius:2px;"></div>
-            <div class="brand" style="display:inline-block;font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#62a536;margin-bottom:12px;">BRIGC 舆情简报</div>
-            <h1 style="font-size:26px;font-weight:700;letter-spacing:-0.5px;color:#111827;margin-bottom:8px;">每日资讯简报</h1>
-            <div class="date" style="font-size:14px;color:#6b7280;font-weight:400;">2026年04月02日 星期四</div>
+            <h1 class="hero-title" style="font-size:26px;font-weight:700;letter-spacing:-0.3px;color:#111827;margin:0 0 10px 0;">BRIGC 新闻简报</h1>
+            <div class="date" style="font-size:14px;color:#6b7280;font-weight:400;">2026年04月17日 星期五</div>
         </div>
 
         
         <div class="toc-nav" style="padding:12px 24px;text-align:center;background-color:#ffffff;border-bottom:1px solid #e5e7eb;">
             
-            <a href="#cat-1" class="toc-link" style="display:inline-block;padding:6px 14px;margin:4px;background-color:#f7f8fa;border:1px solid #e5e7eb;border-radius:20px;font-size:12px;font-weight:500;color:#374151;text-decoration:none;">舆情总览</a>
+            <a href="#cat-1" class="toc-link" style="display:inline-block;padding:6px 14px;margin:4px;background-color:#f7f8fa;border:1px solid #e5e7eb;border-radius:20px;font-size:12px;font-weight:500;color:#374151;text-decoration:none;">气候变化</a>
             
-            <a href="#cat-2" class="toc-link" style="display:inline-block;padding:6px 14px;margin:4px;background-color:#f7f8fa;border:1px solid #e5e7eb;border-radius:20px;font-size:12px;font-weight:500;color:#374151;text-decoration:none;">气候变化</a>
+            <a href="#cat-2" class="toc-link" style="display:inline-block;padding:6px 14px;margin:4px;background-color:#f7f8fa;border:1px solid #e5e7eb;border-radius:20px;font-size:12px;font-weight:500;color:#374151;text-decoration:none;">生态环保</a>
             
-            <a href="#cat-3" class="toc-link" style="display:inline-block;padding:6px 14px;margin:4px;background-color:#f7f8fa;border:1px solid #e5e7eb;border-radius:20px;font-size:12px;font-weight:500;color:#374151;text-decoration:none;">生态环保</a>
+            <a href="#cat-3" class="toc-link" style="display:inline-block;padding:6px 14px;margin:4px;background-color:#f7f8fa;border:1px solid #e5e7eb;border-radius:20px;font-size:12px;font-weight:500;color:#374151;text-decoration:none;">绿色金融</a>
             
-            <a href="#cat-4" class="toc-link" style="display:inline-block;padding:6px 14px;margin:4px;background-color:#f7f8fa;border:1px solid #e5e7eb;border-radius:20px;font-size:12px;font-weight:500;color:#374151;text-decoration:none;">绿色金融</a>
+            <a href="#cat-4" class="toc-link" style="display:inline-block;padding:6px 14px;margin:4px;background-color:#f7f8fa;border:1px solid #e5e7eb;border-radius:20px;font-size:12px;font-weight:500;color:#374151;text-decoration:none;">国际合作</a>
+            
+            <a href="#cat-5" class="toc-link" style="display:inline-block;padding:6px 14px;margin:4px;background-color:#f7f8fa;border:1px solid #e5e7eb;border-radius:20px;font-size:12px;font-weight:500;color:#374151;text-decoration:none;">全球动态</a>
             
         </div>
-
-        
-        <table class="stats" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;background-color:#f7f8fa;border-bottom:1px solid #e5e7eb;">
-            <tr>
-                <td class="stat-item" width="33%" style="text-align:center;padding:20px 12px;border-right:1px solid #e5e7eb;">
-                    <div class="stat-value" style="font-size:24px;font-weight:700;color:#62a536;">13</div>
-                    <div class="stat-label" style="font-size:11px;color:#9ca3af;text-transform:uppercase;letter-spacing:1px;margin-top:4px;">资讯</div>
-                </td>
-                <td class="stat-item" width="34%" style="text-align:center;padding:20px 12px;border-right:1px solid #e5e7eb;">
-                    <div class="stat-value" style="font-size:24px;font-weight:700;color:#62a536;">9</div>
-                    <div class="stat-label" style="font-size:11px;color:#9ca3af;text-transform:uppercase;letter-spacing:1px;margin-top:4px;">来源</div>
-                </td>
-                <td class="stat-item" width="33%" style="text-align:center;padding:20px 12px;">
-                    <div class="stat-value" style="font-size:24px;font-weight:700;color:#62a536;">4</div>
-                    <div class="stat-label" style="font-size:11px;color:#9ca3af;text-transform:uppercase;letter-spacing:1px;margin-top:4px;">板块</div>
-                </td>
-            </tr>
-        </table>
 
         
         
         
         <div class="editorial" style="padding:24px;background-color:#ffffff;border-bottom:1px solid #e5e7eb;">
-            <div style="font-size:13px;font-weight:600;color:#62a536;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:14px;">📝 本期导语</div>
-            <div style="font-size:15px;color:#374151;line-height:1.9;padding:16px 18px;background-color:#f7f8fa;border-radius:8px;border-left:3px solid #62a536;">当菲律宾以1.28吉瓦太阳能项目抢占能源安全主动权时，气候变化的不可逆冲击正在澳大利亚敲响物种灭绝的警钟——这两条看似并行的线索，实则揭示着当下全球绿色转型的深层张力：新兴市场正借新能源技术构建发展新叙事，而传统能源格局的既得利益者却在政策博弈中持续制造摩擦。值得关注的是，阿根廷、墨西哥同步押注比亚迪电动汽车，阿巴拉契亚的碳汇项目获得科技巨头真金白银投入，这些信号表明能源转型的经济逻辑已不可逆转；但与此同时，AI数据中心能源消耗骤增、澳大利亚油气巨头被迫调整碳捕集计划以合规、以及恒天然因“洗绿”被追责，则暴露了转型进程中技术瓶颈、监管缺位与绿色投机并存的复杂图景。可以预见，未来一到两年间，气候诉讼与绿色金融工具的创新使用将成为倒逼高碳产业真转型的关键杠杆，而谁能在技术与政策的交汇处率先建立可验证的减碳路径，谁就将掌握下一阶段绿色竞争的话语权。</div>
-        </div>
-        
-        
-        
-        <div class="brief" style="padding:24px;background-color:#ffffff;border-bottom:1px solid #e5e7eb;">
-            <div class="brief-title" style="font-size:13px;font-weight:600;color:#62a536;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:14px;">📋 舆情总览</div>
-            <div class="brief-content" style="font-size:15px;color:#374151;line-height:1.8;"><div style="margin-bottom:12px;padding:10px 14px;background-color:#f7f8fa;border-radius:8px;border-left:3px solid #62a536;"><span style="display:inline-block;font-size:13px;font-weight:600;color:#62a536;margin-bottom:4px;">舆情总览</span><br/><span style="font-size:15px;color:#374151;line-height:1.75;">菲律宾能源部加速推进12个太阳能项目并网，总装机容量达1.28吉瓦，计划于4月完成。此举旨在应对中东冲突引发的全球石油市场波动，提升本国能源安全水平，展现了东南亚国家加速清洁能源转型的趋势。</span></div><div style="margin-bottom:12px;padding:10px 14px;background-color:#f7f8fa;border-radius:8px;border-left:3px solid #62a536;"><span style="display:inline-block;font-size:13px;font-weight:600;color:#62a536;margin-bottom:4px;">气候变化</span><br/><span style="font-size:15px;color:#374151;line-height:1.75;">气候危机对生物多样性构成严重威胁，澳大利亚顶级细尾鹩莺可能在几十年内灭绝。同时特朗普政府的新生物燃料目标引发争议，可能威胁富含碳的雨林生态，凸显气候政策与环境保护之间的冲突。</span></div><div style="margin-bottom:12px;padding:10px 14px;background-color:#f7f8fa;border-radius:8px;border-left:3px solid #62a536;"><span style="display:inline-block;font-size:13px;font-weight:600;color:#62a536;margin-bottom:4px;">生态环保</span><br/><span style="font-size:15px;color:#374151;line-height:1.75;">多领域呈现积极与挑战并存的态势：阿根廷、墨西哥大幅采购比亚迪电动汽车，推动拉美电动化；公海条约生效促进海洋保护区建设；食物浪费预防成为气候解决方案。但AI数据中心能源消耗快速增长带来新挑战，恒天然因绿色清洗被诉则警示企业环保宣传需合规。</span></div><div style="margin-bottom:12px;padding:10px 14px;background-color:#f7f8fa;border-radius:8px;border-left:3px solid #62a536;"><span style="display:inline-block;font-size:13px;font-weight:600;color:#62a536;margin-bottom:4px;">绿色金融</span><br/><span style="font-size:15px;color:#374151;line-height:1.75;">全球气候诉讼与碳汇投资并行推进。绿色和平推动非洲法院认定气候损害为侵犯人权行为；谷歌、Meta等巨头投资阿巴拉契亚13万吨碳汇造林项目。澳大利亚通过立法支持关键矿物和燃料贸易储备，伍德赛德调整碳捕获计划以符合新规，显示绿色金融体系日趋完善。</span></div></div>
+            <div style="font-size:13px;font-weight:600;color:#62a536;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:14px;">本期导语</div>
+            <div style="font-size:16px;color:#374151;line-height:1.7;padding:16px 18px;background-color:#f7f8fa;border-radius:8px;border-left:3px solid #62a536;text-align:justify;">全球气候治理正从“承诺期”加速转入“执行博弈期”。本周新闻呈现出一个核心趋势：气候行动已不仅是科学议题，更是各国在经济韧性、能源安全与生态保护之间进行政策权衡的复杂战场。一方面，哥伦比亚首届化石燃料转型会议与北极河流酸化预警形成对照——前者试图为全球退出化石燃料寻找制度路径，后者的生态异变则敲响气候临界点的现实警钟；另一方面，美国国会取消边境水域采矿禁令、中国首部生态环境法典出台、欧银拟削减50% ESG报告要求等动向，折射出各国在气候目标与经济现实之间的政策摇摆。
+
+三条脉络值得关注：一是能源转型与资源保护的冲突正在加剧，镍铜等关键矿产的开发诉求与森林生态红线形成正面碰撞；二是地缘政治风险正在重塑气候议程，印尼因霍尔木兹海峡危机重写能源策略，中国钢铁企业则需应对欧盟碳边境关税的产业链传导；三是制度创新与监管松绑并存，中国将“双碳”目标写入法典的同时，欧洲银行业却在简化ESG披露要求，这种政策张力的消长将深刻影响绿色金融的长期走向。展望未来，气候治理的“务实转向”或将持续，各国在平衡气候雄心与经济安全之间的政策选择，将成为决定全球温升轨迹的关键变量。</div>
         </div>
         
 
@@ -581,13 +494,13 @@
             <div class="section-header" style="margin-bottom:20px;">
                 <table cellpadding="0" cellspacing="0" border="0" style="width:auto;border-collapse:collapse;">
                     <tr>
-                        <td style="width:36px;height:36px;border-radius:10px;text-align:center;vertical-align:middle;background-color:#e8f5e0;font-size:18px;line-height:36px;" width="36" height="36">📡</td>
-                        <td class="section-title" style="font-size:16px;font-weight:600;color:#111827;letter-spacing:0.3px;padding-left:12px;vertical-align:middle;white-space:nowrap;">舆情总览</td>
+                        <td style="width:36px;height:36px;border-radius:10px;text-align:center;vertical-align:middle;background-color:#fef2f2;font-size:18px;line-height:36px;" width="36" height="36">🌡️</td>
+                        <td class="section-title" style="font-size:18px;font-weight:600;color:#111827;letter-spacing:0.3px;padding-left:12px;vertical-align:middle;white-space:nowrap;">气候变化</td>
                     </tr>
                 </table>
                 
-                <div style="margin-top:12px;padding:10px 14px;background-color:#f7f8fa;border-left:3px solid #62a536;border-radius:0 6px 6px 0;font-size:14px;color:#374151;line-height:1.75;">
-                    菲律宾能源部加速推进12个太阳能项目并网，总装机容量达1.28吉瓦，计划于4月完成。此举旨在应对中东冲突引发的全球石油市场波动，提升本国能源安全水平，展现了东南亚国家加速清洁能源转型的趋势。
+                <div style="margin-top:12px;padding:10px 14px;background-color:#f7f8fa;border-left:3px solid #62a536;border-radius:0 6px 6px 0;font-size:16px;color:#374151;line-height:1.7;text-align:justify;">
+                    多国政府代表团将于4月底在哥伦比亚参加首届远离化石燃料转型会议，研究显示全球石油和天然气区块已与约1.79亿公顷热带湿润森林重叠。美国参议院近日投票取消拜登时期在明尼苏达州边界水域的20年采矿禁令，为金属开采扫除障碍。
                 </div>
                 
             </div>
@@ -595,32 +508,46 @@
             
                 
                     <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
-                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#f7f8fa;border-bottom:1px solid #e5e7eb;">
-                            海外舆情·全部
+                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#ffffff;border-bottom:1px solid #f0f1f3;">
+                            气候之家
                             <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">1</span>
                         </div>
-                        <div class="source-content" style="padding:12px;background-color:#fff;">
+                        <div class="source-content" style="padding:0;background-color:#fff;">
                             
-                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
-                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
-                                    <a href="https://www.pv-magazine.com/2026/03/31/philippines-accelerates-grid-entry-for-1-28-gw-of-solar/" target="_blank" style="color:#111827;text-decoration:none;">菲律宾推进1.28吉瓦太阳能项目并网</a>
+                            <div class="card" style="padding:16px;margin-bottom:0;background-color:#ffffff;border:none;border-bottom:1px solid #f0f1f3;">
+                                <div class="card-title" style="font-size:17px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://www.climatechangenews.com/2026/04/15/fossil-free-zones-can-be-on-ramps-to-the-clean-energy-transition/" target="_blank" style="color:#111827;text-decoration:none;">首届远离化石燃料转型会议将在哥伦比亚举行</a>
                                 </div>
-                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
-                                    <tr>
-                                        <td style="padding-right:10px;">
-                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">海外舆情·全部</span>
-                                        </td>
-                                        
-                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
-                                            2026-03-31 10:00
-                                        </td>
-                                        
-                                    </tr>
-                                </table>
                                 
-                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">【正面】菲律宾能源部宣布正快速推进12个太阳能项目，计划于4月实现并网发电，总装机容量达1.28吉瓦。此举旨在应对中东冲突引发的全球石油市场变化，提升本国能源安全并推动可再生能源发展。分析师指出，菲律宾此时加速太阳能项目布局，既是为了分散能源进口依赖，也是抓住全球能源转型机遇。</div>
+                                <div style="font-size:12px;color:#9ca3af;margin-bottom:12px;">2026-04-15 15:01</div>
                                 
-                                <a href="https://www.pv-magazine.com/2026/03/31/philippines-accelerates-grid-entry-for-1-28-gw-of-solar/" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
+                                
+                                <div class="card-summary" style="font-size:16px;color:#4b5563;line-height:1.7;margin-bottom:14px;text-align:justify;">4月底，多国政府代表团将齐聚哥伦比亚参加&#34;首届远离化石燃料转型会议&#34;。研究表明，全球石油和天然气区块已与约1.79亿公顷热带湿润森林重叠，占亚马逊、刚果盆地及东南亚森林覆盖面积约21%；全球约27%常规石油资源与优先社会环境区域重叠，2024年85%新石油发现位于海上。哥伦比亚于2023年9月宣布在亚马逊地区实施化石燃料和采矿禁令，成为</div>
+                                
+                                <a href="https://www.climatechangenews.com/2026/04/15/fossil-free-zones-can-be-on-ramps-to-the-clean-energy-transition/" class="card-link" target="_blank" style="color:#549e39;text-decoration:none;font-size:13px;font-weight:500;">阅读原文 →</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
+                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#ffffff;border-bottom:1px solid #f0f1f3;">
+                            气候内参
+                            <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">1</span>
+                        </div>
+                        <div class="source-content" style="padding:0;background-color:#fff;">
+                            
+                            <div class="card" style="padding:16px;margin-bottom:0;background-color:#ffffff;border:none;border-bottom:1px solid #f0f1f3;">
+                                <div class="card-title" style="font-size:17px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://insideclimatenews.org/news/16042026/minnesotas-boundary-waters-just-lost-protection-from-mining/" target="_blank" style="color:#111827;text-decoration:none;">美国会取消边界水域20年采矿禁令</a>
+                                </div>
+                                
+                                <div style="font-size:12px;color:#9ca3af;margin-bottom:12px;">2026-04-17 04:39</div>
+                                
+                                
+                                <div class="card-summary" style="font-size:16px;color:#4b5563;line-height:1.7;margin-bottom:14px;text-align:justify;">美国参议院投票取消拜登时期在明尼苏达州边界水域划独木舟区荒野流域实施的20年采矿禁令，为Twin Metals公司开采镍、铜等金属扫除主要障碍。该公司自2019年起寻求在该地区建矿，特朗普预计将签署法案解除禁令。禁令由美国林务局于2023年设立，因硫化物采矿可能导致水资源污染及生态破坏。民主党参议员Tina Smith曾发起数小时阻挠演说反对该决议。</div>
+                                
+                                <a href="https://insideclimatenews.org/news/16042026/minnesotas-boundary-waters-just-lost-protection-from-mining/" class="card-link" target="_blank" style="color:#549e39;text-decoration:none;font-size:13px;font-weight:500;">阅读原文 →</a>
                             </div>
                             
                         </div>
@@ -633,13 +560,13 @@
             <div class="section-header" style="margin-bottom:20px;">
                 <table cellpadding="0" cellspacing="0" border="0" style="width:auto;border-collapse:collapse;">
                     <tr>
-                        <td style="width:36px;height:36px;border-radius:10px;text-align:center;vertical-align:middle;background-color:#fef2f2;font-size:18px;line-height:36px;" width="36" height="36">🌡️</td>
-                        <td class="section-title" style="font-size:16px;font-weight:600;color:#111827;letter-spacing:0.3px;padding-left:12px;vertical-align:middle;white-space:nowrap;">气候变化</td>
+                        <td style="width:36px;height:36px;border-radius:10px;text-align:center;vertical-align:middle;background-color:#ecfdf5;font-size:18px;line-height:36px;" width="36" height="36">🌱</td>
+                        <td class="section-title" style="font-size:18px;font-weight:600;color:#111827;letter-spacing:0.3px;padding-left:12px;vertical-align:middle;white-space:nowrap;">生态环保</td>
                     </tr>
                 </table>
                 
-                <div style="margin-top:12px;padding:10px 14px;background-color:#f7f8fa;border-left:3px solid #62a536;border-radius:0 6px 6px 0;font-size:14px;color:#374151;line-height:1.75;">
-                    气候危机对生物多样性构成严重威胁，澳大利亚顶级细尾鹩莺可能在几十年内灭绝。同时特朗普政府的新生物燃料目标引发争议，可能威胁富含碳的雨林生态，凸显气候政策与环境保护之间的冲突。
+                <div style="margin-top:12px;padding:10px 14px;background-color:#f7f8fa;border-left:3px solid #62a536;border-radius:0 6px 6px 0;font-size:16px;color:#374151;line-height:1.7;text-align:justify;">
+                    全球环境挑战持续加剧。气候变化导致北极地区永久冻土融化和降雨增加，超过200条河流出现酸化变色。尼日利亚宣布对大排量车辆征收绿色税。亚马逊流域有组织犯罪加剧生态危机，可能引发不可逆的临界点。中国首部生态环境法典于2025年3月正式出台，共1242条。
                 </div>
                 
             </div>
@@ -647,64 +574,92 @@
             
                 
                     <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
-                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#f7f8fa;border-bottom:1px solid #e5e7eb;">
-                            卫报·气候
+                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#ffffff;border-bottom:1px solid #f0f1f3;">
+                            Yale E360
                             <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">1</span>
                         </div>
-                        <div class="source-content" style="padding:12px;background-color:#fff;">
+                        <div class="source-content" style="padding:0;background-color:#fff;">
                             
-                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
-                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
-                                    <a href="https://www.theguardian.com/australia-news/2026/apr/01/australia-superb-fairywren-bird-climate-crisis-extinction-risk-within-decades-scientists-warn" target="_blank" style="color:#111827;text-decoration:none;">研究人员称，由于气候危机，澳大利亚的顶级细尾鹩莺可能会在几十年内灭绝</a>
+                            <div class="card" style="padding:16px;margin-bottom:0;background-color:#ffffff;border:none;border-bottom:1px solid #f0f1f3;">
+                                <div class="card-title" style="font-size:17px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://e360.yale.edu/features/rusting-rivers" target="_blank" style="color:#111827;text-decoration:none;">北极河流酸化加剧警报升级</a>
                                 </div>
-                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
-                                    <tr>
-                                        <td style="padding-right:10px;">
-                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">卫报·气候</span>
-                                        </td>
-                                        
-                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
-                                            2026-04-01 06:00
-                                        </td>
-                                        
-                                    </tr>
-                                </table>
                                 
-                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">科学家追踪了堪培拉植物园中的鸟类数量，发现气候影响开始影响它们关注我们的澳大利亚新闻直播博客以获取最新更新获取我们的突发新闻电子邮件，...</div>
+                                <div style="font-size:12px;color:#9ca3af;margin-bottom:12px;">2026-04-16 16:45</div>
                                 
-                                <a href="https://www.theguardian.com/australia-news/2026/apr/01/australia-superb-fairywren-bird-climate-crisis-extinction-risk-within-decades-scientists-warn" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
+                                
+                                <div class="card-summary" style="font-size:16px;color:#4b5563;line-height:1.7;margin-bottom:14px;text-align:justify;">气候变化导致北极地区永久冻土融化和降雨增加，产生硫酸使河流和湖泊变为黄色或锈橙色。2019年以来阿拉斯加超过200条河流出现酸化变色，部分河流pH值降至2.3，酸性可比拟醋。科学家正紧急研究这一现象对鱼类、其他水生生物及原住民饮用水的影响。该酸化现象已蔓延至加拿大 Yukon 和西北地区，并延伸至北极群岛。</div>
+                                
+                                <a href="https://e360.yale.edu/features/rusting-rivers" class="card-link" target="_blank" style="color:#549e39;text-decoration:none;font-size:13px;font-weight:500;">阅读原文 →</a>
                             </div>
                             
                         </div>
                     </div>
                 
                     <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
-                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#f7f8fa;border-bottom:1px solid #e5e7eb;">
-                            气候内参
+                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#ffffff;border-bottom:1px solid #f0f1f3;">
+                            气候与环境
                             <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">1</span>
                         </div>
-                        <div class="source-content" style="padding:12px;background-color:#fff;">
+                        <div class="source-content" style="padding:0;background-color:#fff;">
                             
-                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
-                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
-                                    <a href="https://insideclimatenews.org/news/31032026/trump-biofuels-targets-threaten-rainforests/" target="_blank" style="color:#111827;text-decoration:none;">特朗普政府的新生物燃料目标威胁富含碳的雨林</a>
+                            <div class="card" style="padding:16px;margin-bottom:0;background-color:#ffffff;border:none;border-bottom:1px solid #f0f1f3;">
+                                <div class="card-title" style="font-size:17px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://www.bloomberg.com/news/articles/2026-04-16/nigeria-passes-green-tax-targeting-vehicles-with-bigger-engines" target="_blank" style="color:#111827;text-decoration:none;">尼日利亚对大排量车辆征收绿色税</a>
                                 </div>
-                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
-                                    <tr>
-                                        <td style="padding-right:10px;">
-                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">气候内参</span>
-                                        </td>
-                                        
-                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
-                                            2026-04-01 03:17
-                                        </td>
-                                        
-                                    </tr>
-                                </table>
                                 
-                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">上周，在“伟大的美国农业庆典”期间，唐纳德·特朗普总统站在白宫的杜鲁门阳台上，宣布他所说的对国家农场的“历史性”推动......</div>
+                                <div style="font-size:12px;color:#9ca3af;margin-bottom:12px;">2026-04-16 15:58</div>
                                 
-                                <a href="https://insideclimatenews.org/news/31032026/trump-biofuels-targets-threaten-rainforests/" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
+                                
+                                <div class="card-summary" style="font-size:16px;color:#4b5563;line-height:1.7;margin-bottom:14px;text-align:justify;">尼日利亚政府近日宣布对大排量车辆（包括SUV和卡车）征收绿色税，将污染成本纳入商品价格，旨在推动消费者转向电动汽车，减少空气污染。作为非洲最大经济体，此举标志着该国在绿色交通领域的政策突破，通过税收杠杆调节汽车消费结构，促进低碳转型，同时也是非洲国家应对气候变化挑战的具体实践。</div>
+                                
+                                <a href="https://www.bloomberg.com/news/articles/2026-04-16/nigeria-passes-green-tax-targeting-vehicles-with-bigger-engines" class="card-link" target="_blank" style="color:#549e39;text-decoration:none;font-size:13px;font-weight:500;">阅读原文 →</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
+                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#ffffff;border-bottom:1px solid #f0f1f3;">
+                            FECO环保履约
+                            <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">1</span>
+                        </div>
+                        <div class="source-content" style="padding:0;background-color:#fff;">
+                            
+                            <div class="card" style="padding:16px;margin-bottom:0;background-color:#ffffff;border:none;border-bottom:1px solid #f0f1f3;">
+                                <div class="card-title" style="font-size:17px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://news.mongabay.com/2026/04/the-amazons-silent-crime-crisis-commentary/" target="_blank" style="color:#111827;text-decoration:none;">亚马逊流域有组织犯罪加剧生态危机</a>
+                                </div>
+                                
+                                <div style="font-size:12px;color:#9ca3af;margin-bottom:12px;">2026-04-15 17:59</div>
+                                
+                                
+                                <div class="card-summary" style="font-size:16px;color:#4b5563;line-height:1.7;margin-bottom:14px;text-align:justify;">亚马逊正处于关键临界点，有组织犯罪与环境犯罪的关联正在加速森林损失、恶化火灾风险并削弱治理。科学研究显示，当部分地区森林砍伐率达到约20%至25%时，可能引发不可逆转的生态崩溃，目前亚马逊约14%-17%已被砍伐。文章认为解决危机不仅需要保护措施，还需加强执法、进行制度改革并投资可持续社会生物经济。</div>
+                                
+                                <a href="https://news.mongabay.com/2026/04/the-amazons-silent-crime-crisis-commentary/" class="card-link" target="_blank" style="color:#549e39;text-decoration:none;font-size:13px;font-weight:500;">阅读原文 →</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
+                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#ffffff;border-bottom:1px solid #f0f1f3;">
+                            绿色和平国际
+                            <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">1</span>
+                        </div>
+                        <div class="source-content" style="padding:0;background-color:#fff;">
+                            
+                            <div class="card" style="padding:16px;margin-bottom:0;background-color:#ffffff;border:none;border-bottom:1px solid #f0f1f3;">
+                                <div class="card-title" style="font-size:17px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://www.greenpeace.org/international/story/82741/iran-war-china-clean-energy-fossil-fuel-price-shocks/" target="_blank" style="color:#111827;text-decoration:none;">清洁能源助中国抵御化石燃料价格冲击</a>
+                                </div>
+                                
+                                <div style="font-size:12px;color:#9ca3af;margin-bottom:12px;">2026-04-15 22:43</div>
+                                
+                                
+                                <div class="card-summary" style="font-size:16px;color:#4b5563;line-height:1.7;margin-bottom:14px;text-align:justify;">美国和以色列对伊朗和黎巴嫩发动攻击后，Greenpeace 呼吁立即停止军事暴力并寻求外交解决方案。报告指出中国能源系统受到的冲击因可再生能源普及和电动汽车大规模使用而得到缓冲，中国现有超过3000万辆电动汽车，每天替代约43万桶汽油，风能和太阳能的大规模发展也起到稳定作用。但文章同时指出中国整体能源结构仍依赖化石燃料，这次危机表明依赖化石燃料是一种风险。</div>
+                                
+                                <a href="https://www.greenpeace.org/international/story/82741/iran-war-china-clean-energy-fossil-fuel-price-shocks/" class="card-link" target="_blank" style="color:#549e39;text-decoration:none;font-size:13px;font-weight:500;">阅读原文 →</a>
                             </div>
                             
                         </div>
@@ -717,13 +672,13 @@
             <div class="section-header" style="margin-bottom:20px;">
                 <table cellpadding="0" cellspacing="0" border="0" style="width:auto;border-collapse:collapse;">
                     <tr>
-                        <td style="width:36px;height:36px;border-radius:10px;text-align:center;vertical-align:middle;background-color:#ecfdf5;font-size:18px;line-height:36px;" width="36" height="36">🌱</td>
-                        <td class="section-title" style="font-size:16px;font-weight:600;color:#111827;letter-spacing:0.3px;padding-left:12px;vertical-align:middle;white-space:nowrap;">生态环保</td>
+                        <td style="width:36px;height:36px;border-radius:10px;text-align:center;vertical-align:middle;background-color:#d1fae5;font-size:18px;line-height:36px;" width="36" height="36">💹</td>
+                        <td class="section-title" style="font-size:18px;font-weight:600;color:#111827;letter-spacing:0.3px;padding-left:12px;vertical-align:middle;white-space:nowrap;">绿色金融</td>
                     </tr>
                 </table>
                 
-                <div style="margin-top:12px;padding:10px 14px;background-color:#f7f8fa;border-left:3px solid #62a536;border-radius:0 6px 6px 0;font-size:14px;color:#374151;line-height:1.75;">
-                    多领域呈现积极与挑战并存的态势：阿根廷、墨西哥大幅采购比亚迪电动汽车，推动拉美电动化；公海条约生效促进海洋保护区建设；食物浪费预防成为气候解决方案。但AI数据中心能源消耗快速增长带来新挑战，恒天然因绿色清洗被诉则警示企业环保宣传需合规。
+                <div style="margin-top:12px;padding:10px 14px;background-color:#f7f8fa;border-left:3px solid #62a536;border-radius:0 6px 6px 0;font-size:16px;color:#374151;line-height:1.7;text-align:justify;">
+                    欧洲银行管理局提议将欧盟银行监管报告数据点减少约50%，包括简化ESG披露要求，同时为小型和非复杂银行引入更轻量的ESG报告框架，以在保持监管监督的同时降低合规负担。
                 </div>
                 
             </div>
@@ -731,172 +686,23 @@
             
                 
                     <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
-                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#f7f8fa;border-bottom:1px solid #e5e7eb;">
-                            气候与环境
+                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#ffffff;border-bottom:1px solid #f0f1f3;">
+                            绿色金融与ESG
                             <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">1</span>
                         </div>
-                        <div class="source-content" style="padding:12px;background-color:#fff;">
+                        <div class="source-content" style="padding:0;background-color:#fff;">
                             
-                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
-                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
-                                    <a href="https://cleantechnica.com/2026/03/30/argentina-mexico-just-placed-a-massive-ev-order-on-brazil-50000-byds-each-for-2027/" target="_blank" style="color:#111827;text-decoration:none;">阿根廷墨西哥向巴西订购5万辆比亚迪电动汽车 计划202</a>
+                            <div class="card" style="padding:16px;margin-bottom:0;background-color:#ffffff;border:none;border-bottom:1px solid #f0f1f3;">
+                                <div class="card-title" style="font-size:17px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://esgnews.com/eba-moves-to-cut-bank-esg-reporting-burden-with-50-data-reduction-plan/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=eba-moves-to-cut-bank-esg-reporting-burden-with-50-data-reduction-plan" target="_blank" style="color:#111827;text-decoration:none;">欧银管局拟削减50% ESG报告要求</a>
                                 </div>
-                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
-                                    <tr>
-                                        <td style="padding-right:10px;">
-                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">气候与环境</span>
-                                        </td>
-                                        
-                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
-                                            2026-03-31 02:57
-                                        </td>
-                                        
-                                    </tr>
-                                </table>
                                 
-                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">【正面】阿根廷和墨西哥各向巴西订购50000辆比亚迪电动汽车，计划2027年交付。阿根廷一直是拉丁美洲电动汽车市场的落后者，是最后一个突破0.1%电动汽车市场份额的国家，随后也是最晚达到1%的国家之一，此次大规模订单标志着其电动汽车市场的重大转型。</div>
+                                <div style="font-size:12px;color:#9ca3af;margin-bottom:12px;">2026-04-16 14:18</div>
                                 
-                                <a href="https://cleantechnica.com/2026/03/30/argentina-mexico-just-placed-a-massive-ev-order-on-brazil-50000-byds-each-for-2027/" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
-                            </div>
-                            
-                        </div>
-                    </div>
-                
-                    <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
-                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#f7f8fa;border-bottom:1px solid #e5e7eb;">
-                            绿色和平国际
-                            <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">1</span>
-                        </div>
-                        <div class="source-content" style="padding:12px;background-color:#fff;">
-                            
-                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
-                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
-                                    <a href="https://www.greenpeace.org/international/press-release/82455/new-zealand-dairy-giant-fonterra-admits-lawbreaking-to-settle-greenwashing-lawsui/" target="_blank" style="color:#111827;text-decoration:none;">新西兰乳业巨头恒天然承认违法以和解绿色清洗诉讼</a>
-                                </div>
-                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
-                                    <tr>
-                                        <td style="padding-right:10px;">
-                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">绿色和平国际</span>
-                                        </td>
-                                        
-                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
-                                            2026-04-01 07:50
-                                        </td>
-                                        
-                                    </tr>
-                                </table>
                                 
-                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">全球最大的乳制品出口商、新西兰乳制品巨头恒天然承认，其旗舰产品 Anchor 品牌黄油的包装违反了公平贸易法，以和解针对新西兰乳制品公司提起的诉讼。</div>
+                                <div class="card-summary" style="font-size:16px;color:#4b5563;line-height:1.7;margin-bottom:14px;text-align:justify;">欧洲银行管理局（EBA）提议将欧盟银行监管报告数据点减少约50%，包括简化ESG披露要求，同时保持监管监督。新框架为小型和非复杂银行引入更轻量的ESG报告要求，呼应欧盟范围内监管简化努力。公众咨询截止至2026年7月，预计2027年9月实施。EBA主席称该计划是“前所未有的简化方案”，旨在减轻不必要负担同时保留监管所需信息质量。</div>
                                 
-                                <a href="https://www.greenpeace.org/international/press-release/82455/new-zealand-dairy-giant-fonterra-admits-lawbreaking-to-settle-greenwashing-lawsui/" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
-                            </div>
-                            
-                        </div>
-                    </div>
-                
-                    <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
-                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#f7f8fa;border-bottom:1px solid #e5e7eb;">
-                            Mongabay 环境新闻
-                            <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">2</span>
-                        </div>
-                        <div class="source-content" style="padding:12px;background-color:#fff;">
-                            
-                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
-                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
-                                    <a href="https://news.mongabay.com/2026/03/ancient-carbon-venting-from-lakes-in-the-congo-basin-peatlands-study/" target="_blank" style="color:#111827;text-decoration:none;">刚果盆地泥炭地湖泊的“古代”碳排放：研究</a>
-                                </div>
-                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
-                                    <tr>
-                                        <td style="padding-right:10px;">
-                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">Mongabay 环境新闻</span>
-                                        </td>
-                                        
-                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
-                                            2026-03-31 21:35
-                                        </td>
-                                        
-                                    </tr>
-                                </table>
-                                
-                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">刚果盆地中部有一个碳堡垒，科学家们才刚刚开始了解它。大约十年前首次绘制地图，Cuvette Centrale 泥炭地的面积相当于英格兰...</div>
-                                
-                                <a href="https://news.mongabay.com/2026/03/ancient-carbon-venting-from-lakes-in-the-congo-basin-peatlands-study/" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
-                            </div>
-                            
-                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
-                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
-                                    <a href="https://news.mongabay.com/2026/03/with-high-seas-treaty-in-place-west-african-countries-plan-for-protected-area/" target="_blank" style="color:#111827;text-decoration:none;">公海条约生效 西非国家规划海洋保护区</a>
-                                </div>
-                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
-                                    <tr>
-                                        <td style="padding-right:10px;">
-                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">Mongabay 环境新闻</span>
-                                        </td>
-                                        
-                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
-                                            2026-03-31 20:51
-                                        </td>
-                                        
-                                    </tr>
-                                </table>
-                                
-                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">随着《公海条约》于一月生效，在各国管辖范围之外的海洋空间建立保护区的努力正在获得动力——包括临时建立保护区。</div>
-                                
-                                <a href="https://news.mongabay.com/2026/03/with-high-seas-treaty-in-place-west-african-countries-plan-for-protected-area/" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
-                            </div>
-                            
-                        </div>
-                    </div>
-                
-                    <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
-                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#f7f8fa;border-bottom:1px solid #e5e7eb;">
-                            FECO环保履约
-                            <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">2</span>
-                        </div>
-                        <div class="source-content" style="padding:12px;background-color:#fff;">
-                            
-                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
-                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
-                                    <a href="https://earthjustice.org/article/what-you-need-to-know-about-ai-data-centers" target="_blank" style="color:#111827;text-decoration:none;">AI数据中心能源消耗与污染问题</a>
-                                </div>
-                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
-                                    <tr>
-                                        <td style="padding-right:10px;">
-                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">FECO环保履约</span>
-                                        </td>
-                                        
-                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
-                                            2026-03-31 07:00
-                                        </td>
-                                        
-                                    </tr>
-                                </table>
-                                
-                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">【负面】Earthjustice环保组织的律师正在努力控制AI数据中心的污染和气候影响，这些数据中心正在成为能源消耗的重要组成部分。AI数据中心的快速发展不仅对环境造成压力，还直接影响用户的电费账单，引发关于可持续发展的讨论。</div>
-                                
-                                <a href="https://earthjustice.org/article/what-you-need-to-know-about-ai-data-centers" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
-                            </div>
-                            
-                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
-                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
-                                    <a href="https://www.un.org/en/un-chronicle/turning-food-waste-prevention-scalable-climate-solution" target="_blank" style="color:#111827;text-decoration:none;">将食物浪费预防转变为可扩展的气候解决方案</a>
-                                </div>
-                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
-                                    <tr>
-                                        <td style="padding-right:10px;">
-                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">FECO环保履约</span>
-                                        </td>
-                                        
-                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
-                                            2026-03-31 00:23
-                                        </td>
-                                        
-                                    </tr>
-                                </table>
-                                
-                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">【正面】2026年3月30日 食物浪费通常被认为是当今粮食系统不可避免的副产品，但解决这一问题正在成为缓解气候变化、改善资源利用和加强粮食安全的关键杠杆。在世界各地，我们的粮食系统每年在零售、食品服务和家庭层面产生超过 10 亿吨废物。粮食损失和浪费造成了重大气候问题，估计占全球温室气体排放量的 8% 至 10%，</div>
-                                
-                                <a href="https://www.un.org/en/un-chronicle/turning-food-waste-prevention-scalable-climate-solution" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
+                                <a href="https://esgnews.com/eba-moves-to-cut-bank-esg-reporting-burden-with-50-data-reduction-plan/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=eba-moves-to-cut-bank-esg-reporting-burden-with-50-data-reduction-plan" class="card-link" target="_blank" style="color:#549e39;text-decoration:none;font-size:13px;font-weight:500;">阅读原文 →</a>
                             </div>
                             
                         </div>
@@ -909,13 +715,13 @@
             <div class="section-header" style="margin-bottom:20px;">
                 <table cellpadding="0" cellspacing="0" border="0" style="width:auto;border-collapse:collapse;">
                     <tr>
-                        <td style="width:36px;height:36px;border-radius:10px;text-align:center;vertical-align:middle;background-color:#d1fae5;font-size:18px;line-height:36px;" width="36" height="36">💹</td>
-                        <td class="section-title" style="font-size:16px;font-weight:600;color:#111827;letter-spacing:0.3px;padding-left:12px;vertical-align:middle;white-space:nowrap;">绿色金融</td>
+                        <td style="width:36px;height:36px;border-radius:10px;text-align:center;vertical-align:middle;background-color:#e0f2fe;font-size:18px;line-height:36px;" width="36" height="36">🌐</td>
+                        <td class="section-title" style="font-size:18px;font-weight:600;color:#111827;letter-spacing:0.3px;padding-left:12px;vertical-align:middle;white-space:nowrap;">国际合作</td>
                     </tr>
                 </table>
                 
-                <div style="margin-top:12px;padding:10px 14px;background-color:#f7f8fa;border-left:3px solid #62a536;border-radius:0 6px 6px 0;font-size:14px;color:#374151;line-height:1.75;">
-                    全球气候诉讼与碳汇投资并行推进。绿色和平推动非洲法院认定气候损害为侵犯人权行为；谷歌、Meta等巨头投资阿巴拉契亚13万吨碳汇造林项目。澳大利亚通过立法支持关键矿物和燃料贸易储备，伍德赛德调整碳捕获计划以符合新规，显示绿色金融体系日趋完善。
+                <div style="margin-top:12px;padding:10px 14px;background-color:#f7f8fa;border-left:3px solid #62a536;border-radius:0 6px 6px 0;font-size:16px;color:#374151;line-height:1.7;text-align:justify;">
+                    中国加速推进氢能规模化战略，国家能源局已指定41个氢能产业试点项目。亚投行呼吁加大投资保护全球水循环，指出水相关项目仅占2020年发展融资约10%。印尼因应霍尔木兹海峡危机加速重写能源策略，多元化石油来源并实施需求管理。
                 </div>
                 
             </div>
@@ -923,108 +729,112 @@
             
                 
                     <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
-                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#f7f8fa;border-bottom:1px solid #e5e7eb;">
-                            绿色金融与ESG
-                            <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">3</span>
+                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#ffffff;border-bottom:1px solid #f0f1f3;">
+                            海外舆情·全部
+                            <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">1</span>
                         </div>
-                        <div class="source-content" style="padding:12px;background-color:#fff;">
+                        <div class="source-content" style="padding:0;background-color:#fff;">
                             
-                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
-                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
-                                    <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaDZpTHM4YlpxdGdPRUtIVU9oR0hYSzFrQTNfa2hHcmFKNGZnZmNtQ3htWXNkZDRhbE95ZzI0VzA0a3E1UWljZy1oRml2YVRNWHdMUmhXR0NkVzRoODNuN0JlQU1LaTE3Q0JiRTZ5UjlHOXFEYW5vLVJIY0NIbkNRamROcjVab29QbEYxbnZQemNFVEJuR0NULUlpakV3UEJVSXhJU2lVM3g4Q1E?oc=5" target="_blank" style="color:#111827;text-decoration:none;">绿色和平推动非洲法院认定气候损害为侵权</a>
+                            <div class="card" style="padding:16px;margin-bottom:0;background-color:#ffffff;border:none;border-bottom:1px solid #f0f1f3;">
+                                <div class="card-title" style="font-size:17px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://www.scmp.com/economy/china-economy/article/3350313/china-fast-tracks-hydrogen-strategy-scale-phase-high-stakes-energy-transition?utm_source=rss_feed" target="_blank" style="color:#111827;text-decoration:none;">中国加速推进氢能规模化战略</a>
                                 </div>
-                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
-                                    <tr>
-                                        <td style="padding-right:10px;">
-                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">绿色金融与ESG</span>
-                                        </td>
-                                        
-                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
-                                            2026-03-31 15:15
-                                        </td>
-                                        
-                                    </tr>
-                                </table>
                                 
-                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">【正面】绿色和平组织非洲分部正在积极推动非洲人权法院将气候变化造成的损害认定为侵犯人权行为。该组织认为，气候变化对非洲大陆造成的极端天气、海平面上升和生态破坏直接影响当地居民的生存权和发展权，呼吁法院建立气候诉讼先例。</div>
+                                <div style="font-size:12px;color:#9ca3af;margin-bottom:12px;">2026-04-16 10:00</div>
                                 
-                                <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaDZpTHM4YlpxdGdPRUtIVU9oR0hYSzFrQTNfa2hHcmFKNGZnZmNtQ3htWXNkZDRhbE95ZzI0VzA0a3E1UWljZy1oRml2YVRNWHdMUmhXR0NkVzRoODNuN0JlQU1LaTE3Q0JiRTZ5UjlHOXFEYW5vLVJIY0NIbkNRamROcjVab29QbEYxbnZQemNFVEJuR0NULUlpakV3UEJVSXhJU2lVM3g4Q1E?oc=5" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
-                            </div>
-                            
-                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
-                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
-                                    <a href="https://esgnews.com/google-mckinsey-meta-back-131240-tonne-u-s-reforestation-carbon-deal-in-appalachia/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=google-mckinsey-meta-back-131240-tonne-u-s-reforestation-carbon-deal-in-appalachia" target="_blank" style="color:#111827;text-decoration:none;">谷歌等巨头投资阿巴拉契亚13万吨碳汇造林</a>
-                                </div>
-                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
-                                    <tr>
-                                        <td style="padding-right:10px;">
-                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">绿色金融与ESG</span>
-                                        </td>
-                                        
-                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
-                                            2026-03-31 14:05
-                                        </td>
-                                        
-                                    </tr>
-                                </table>
                                 
-                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">【正面】谷歌、麦肯锡、Meta等大型企业正加速投资自然碳汇项目，共同支持阿巴拉契亚地区一个大型造林项目。该项目旨在恢复退化土地并实现可衡量的减排效果，项目总规模达13.12万吨碳汇，标志着企业级自然碳移除投资持续升温。</div>
+                                <div class="card-summary" style="font-size:16px;color:#4b5563;line-height:1.7;margin-bottom:14px;text-align:justify;">中国国家能源局近期召开会议，承诺加速氢能产业发展，将氢能定位为增强国家能源韧性的“战略杠杆”。2025年12月，国家能源局已指定41个氢能产业试点项目和9个试点区域，覆盖生产、运输、储存及应用全价值链。会议强调推动制度创新，重点涉及氢交易机制和绿色认证，并从“试点示范”转向“规模化发展”。</div>
                                 
-                                <a href="https://esgnews.com/google-mckinsey-meta-back-131240-tonne-u-s-reforestation-carbon-deal-in-appalachia/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=google-mckinsey-meta-back-131240-tonne-u-s-reforestation-carbon-deal-in-appalachia" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
-                            </div>
-                            
-                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
-                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
-                                    <a href="https://esgnews.com/woodside-resets-browse-carbon-capture-plan-to-meet-new-australian-rules/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=woodside-resets-browse-carbon-capture-plan-to-meet-new-australian-rules" target="_blank" style="color:#111827;text-decoration:none;">伍德赛德调整Browse碳捕获计划以符合澳大利亚新规</a>
-                                </div>
-                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
-                                    <tr>
-                                        <td style="padding-right:10px;">
-                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">绿色金融与ESG</span>
-                                        </td>
-                                        
-                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
-                                            2026-03-30 14:37
-                                        </td>
-                                        
-                                    </tr>
-                                </table>
-                                
-                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">【正面】澳大利亚能源巨头伍德赛德计划恢复Browse气田碳捕获项目，每年可捕获高达400万吨二氧化碳，与LNG生产相关。此举旨在满足澳大利亚修订后的《环境保护与生物多样性保护法》(EPBC Act)提出的更严格要求，反映出能源行业在碳减排压力下加速低碳转型。</div>
-                                
-                                <a href="https://esgnews.com/woodside-resets-browse-carbon-capture-plan-to-meet-new-australian-rules/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=woodside-resets-browse-carbon-capture-plan-to-meet-new-australian-rules" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
+                                <a href="https://www.scmp.com/economy/china-economy/article/3350313/china-fast-tracks-hydrogen-strategy-scale-phase-high-stakes-energy-transition?utm_source=rss_feed" class="card-link" target="_blank" style="color:#549e39;text-decoration:none;font-size:13px;font-weight:500;">阅读原文 →</a>
                             </div>
                             
                         </div>
                     </div>
                 
                     <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
-                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#f7f8fa;border-bottom:1px solid #e5e7eb;">
-                            彭博绿色
+                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#ffffff;border-bottom:1px solid #f0f1f3;">
+                            AIIB 亚投行新闻
                             <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">1</span>
                         </div>
-                        <div class="source-content" style="padding:12px;background-color:#fff;">
+                        <div class="source-content" style="padding:0;background-color:#fff;">
                             
-                            <div class="card" style="padding:16px;margin-bottom:12px;background-color:#ffffff;border:1px solid #eef0f3;border-radius:8px;">
-                                <div class="card-title" style="font-size:16px;font-weight:600;line-height:1.5;margin-bottom:10px;">
-                                    <a href="https://www.bloomberg.com/news/articles/2026-04-01/australia-passes-law-to-trade-stock-fuel-alongside-rare-earths" target="_blank" style="color:#111827;text-decoration:none;">澳大利亚通过贸易、库存燃料和稀土的法律</a>
+                            <div class="card" style="padding:16px;margin-bottom:0;background-color:#ffffff;border:none;border-bottom:1px solid #f0f1f3;">
+                                <div class="card-title" style="font-size:17px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://www.aiib.org/en/news-events/news/2026/aiib-report-urges-greater-investment-protecting-global-water-cycle.html" target="_blank" style="color:#111827;text-decoration:none;">亚投行敦促加大投资保护全球水循环</a>
                                 </div>
-                                <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;border-collapse:collapse;">
-                                    <tr>
-                                        <td style="padding-right:10px;">
-                                            <span class="card-source" style="display:inline-block;padding:4px 10px;background-color:#f0fdf4;color:#549e39;border-radius:4px;font-size:11px;font-weight:500;">彭博绿色</span>
-                                        </td>
-                                        
-                                        <td style="font-size:12px;color:#9ca3af;vertical-align:middle;">
-                                            2026-04-01 11:01
-                                        </td>
-                                        
-                                    </tr>
-                                </table>
                                 
-                                <div class="card-summary" style="font-size:15px;color:#6b7280;line-height:1.7;margin-bottom:14px;">澳大利亚议会通过立法，授权该国出口信贷机构实际购买、储存和销售燃料以及包括稀土在内的关键矿物，因为该国...</div>
+                                <div style="font-size:12px;color:#9ca3af;margin-bottom:12px;">2026-04-16 08:00</div>
                                 
-                                <a href="https://www.bloomberg.com/news/articles/2026-04-01/australia-passes-law-to-trade-stock-fuel-alongside-rare-earths" class="card-link" target="_blank" style="display:inline-block;padding:8px 14px;background-color:#f0fdf4;color:#549e39;border-radius:6px;text-decoration:none;font-size:12px;font-weight:500;">阅读原文<span class="card-link-arrow" style="margin-left:4px;"> →</span></a>
+                                
+                                <div class="card-summary" style="font-size:16px;color:#4b5563;line-height:1.7;margin-bottom:14px;text-align:justify;">亚投行发布《2026年亚洲基础设施金融报告：水往何处》，指出气候正在扰乱全球水循环，水安全、粮食系统和经济受到影响。报告称水相关项目仅占2020年发展融资约10%，远低于2000年的约30%，呼吁增加资金、改革治理并利用技术加强水系统建设。报告强调了多边开发银行在调动私人资本加强自然和混合基础设施方面的作用，并指出“虚拟水贸易”存在显著全球 divide，新兴经济体往往是水密集型出口国，而美日德英等高收入国家则是主要进口国。</div>
+                                
+                                <a href="https://www.aiib.org/en/news-events/news/2026/aiib-report-urges-greater-investment-protecting-global-water-cycle.html" class="card-link" target="_blank" style="color:#549e39;text-decoration:none;font-size:13px;font-weight:500;">阅读原文 →</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
+                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#ffffff;border-bottom:1px solid #f0f1f3;">
+                            外交官杂志
+                            <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">1</span>
+                        </div>
+                        <div class="source-content" style="padding:0;background-color:#fff;">
+                            
+                            <div class="card" style="padding:16px;margin-bottom:0;background-color:#ffffff;border:none;border-bottom:1px solid #f0f1f3;">
+                                <div class="card-title" style="font-size:17px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://thediplomat.com/2026/04/amid-the-hormuz-crisis-indonesia-rewrites-its-energy-playbook/" target="_blank" style="color:#111827;text-decoration:none;">印尼重写能源策略应对霍尔木兹危机</a>
+                                </div>
+                                
+                                <div style="font-size:12px;color:#9ca3af;margin-bottom:12px;">2026-04-15 21:15</div>
+                                
+                                
+                                <div class="card-summary" style="font-size:16px;color:#4b5563;line-height:1.7;margin-bottom:14px;text-align:justify;">霍尔木兹海峡危机促使印尼加速重写能源策略，3月12日总统普拉博沃下令加快能源转型并多元化石油来源，3月31日政府限制燃料销售、保持补贴价格不变并实施需求管理。普拉博沃随后访问日本、韩国和俄罗斯，能源安全成为核心议题，3月31日与日本峰会涵盖LNG、关键矿物、地热能、民用核能及Masela气田、Rayabasa和Hululais地热项目等合作，4月8日普拉博沃明确将能源自给同主权和稳定挂钩。</div>
+                                
+                                <a href="https://thediplomat.com/2026/04/amid-the-hormuz-crisis-indonesia-rewrites-its-energy-playbook/" class="card-link" target="_blank" style="color:#549e39;text-decoration:none;font-size:13px;font-weight:500;">阅读原文 →</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+            
+        </div>
+        
+        <div class="section" id="cat-5" style="padding:28px 24px;border-bottom:1px solid #e5e7eb;">
+            <div class="section-header" style="margin-bottom:20px;">
+                <table cellpadding="0" cellspacing="0" border="0" style="width:auto;border-collapse:collapse;">
+                    <tr>
+                        <td style="width:36px;height:36px;border-radius:10px;text-align:center;vertical-align:middle;background-color:#fef2f2;font-size:18px;line-height:36px;" width="36" height="36">🔥</td>
+                        <td class="section-title" style="font-size:18px;font-weight:600;color:#111827;letter-spacing:0.3px;padding-left:12px;vertical-align:middle;white-space:nowrap;">全球动态</td>
+                    </tr>
+                </table>
+                
+                <div style="margin-top:12px;padding:10px 14px;background-color:#f7f8fa;border-left:3px solid #62a536;border-radius:0 6px 6px 0;font-size:16px;color:#374151;line-height:1.7;text-align:justify;">
+                    中国主要钢铁企业正在协调应对欧盟碳边境调整机制（CBAM）的全面实施，该机制对进口商品征收直接碳联结成本。中国钢铁协会表示对欧间接钢铁出口规则调整需密切关注。
+                </div>
+                
+            </div>
+
+            
+                
+                    <div class="source-group" style="margin-bottom:16px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
+                        <div class="source-header" style="padding:12px 16px;font-weight:600;font-size:14px;color:#111827;background-color:#ffffff;border-bottom:1px solid #f0f1f3;">
+                            南华早报·气候
+                            <span class="source-badge" style="display:inline-block;background-color:#f0fdf4;color:#549e39;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle;">1</span>
+                        </div>
+                        <div class="source-content" style="padding:0;background-color:#fff;">
+                            
+                            <div class="card" style="padding:16px;margin-bottom:0;background-color:#ffffff;border:none;border-bottom:1px solid #f0f1f3;">
+                                <div class="card-title" style="font-size:17px;font-weight:600;line-height:1.5;margin-bottom:10px;">
+                                    <a href="https://www.scmp.com/economy/china-economy/article/3350177/chinese-steelmakers-coordinate-response-eus-carbon-linked-import-imposts?utm_source=rss_feed" target="_blank" style="color:#111827;text-decoration:none;">中国钢企协调应对欧盟碳边境关税</a>
+                                </div>
+                                
+                                <div style="font-size:12px;color:#9ca3af;margin-bottom:12px;">2026-04-15 18:30</div>
+                                
+                                
+                                <div class="card-summary" style="font-size:16px;color:#4b5563;line-height:1.7;margin-bottom:14px;text-align:justify;">中国主要钢铁企业正在协调应对欧盟碳边境调整机制（CBAM）的全面实施，该机制对进口商品征收直接碳联结成本。中国钢铁协会副会长兼秘书长姜伟表示，对欧间接钢铁出口规模可观且包含高附加值产品，CBAM向下游扩展将放大产业链传导效应。上百名钢铁企业和上下游利益相关方参加了线上会议，重点讨论排放因子认可、预验证程序、测试方法及数据安全等合规挑战，中国作为全球最大钢铁生产国面临出口成本上升和碳足迹披露要求趋严的双重压力。</div>
+                                
+                                <a href="https://www.scmp.com/economy/china-economy/article/3350177/chinese-steelmakers-coordinate-response-eus-carbon-linked-import-imposts?utm_source=rss_feed" class="card-link" target="_blank" style="color:#549e39;text-decoration:none;font-size:13px;font-weight:500;">阅读原文 →</a>
                             </div>
                             
                         </div>
@@ -1035,12 +845,20 @@
         
 
         
-        <div class="footer" style="padding:40px 24px;text-align:center;background-color:#f7f8fa;">
-            <div class="footer-brand" style="font-size:13px;font-weight:700;letter-spacing:2px;color:#111827;margin-bottom:8px;">BRIGC 舆情简报</div>
+        <div class="about-us" style="padding:28px 24px;background-color:#f7f8fa;border-top:1px solid #e5e7eb;">
+            <div style="font-size:13px;font-weight:600;color:#62a536;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:14px;">关于我们</div>
+            <div style="font-size:14px;font-weight:700;color:#111827;margin-bottom:8px;">"一带一路"绿色发展国际联盟</div>
+            <div class="about-us-text" style="font-size:13px;color:#6b7280;line-height:1.7;margin-bottom:12px;">由生态环境部主管，2019年正式启动的国际组织。汇聚47个国家、180余家合作伙伴，促进实现"一带一路"绿色发展国际共识、合作和一致行动，将可持续发展融入"一带一路"倡议，助力共建"一带一路"国家实现2030可持续发展目标中环境与发展有关指标。</div>
+            <a href="http://www.brigc.net" target="_blank" style="color:#549e39;text-decoration:none;font-size:13px;font-weight:500;">了解更多 →</a>
+        </div>
+
+        
+        <div class="footer" style="padding:24px 24px 40px;text-align:center;background-color:#f7f8fa;">
+            <div class="footer-brand" style="font-size:13px;font-weight:700;letter-spacing:2px;color:#111827;margin-bottom:8px;">BRIGC 新闻简报</div>
             <div class="footer-tagline" style="font-size:12px;color:#9ca3af;margin-bottom:16px;">由&#34;一带一路&#34;生态环保大数据服务平台 智慧生成</div>
             <div class="footer-divider" style="width:40px;height:2px;background:#62a536;margin:16px auto;border-radius:1px;"></div>
         </div>
 
-    </div>
+    </div><div style="text-align:center;padding:12px 0 24px;font-size:13px;"><a href="archive.html" style="color:#6b7280;text-decoration:none;">📂 往期归档</a></div>
 </body>
 </html>
